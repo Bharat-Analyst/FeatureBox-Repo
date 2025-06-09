@@ -35,9 +35,6 @@ Show similarity scores and key matching attributes (category, brand, region).
 
 ## Gemini Wrapper
 ```python
-df.head()
-```
-```python
 import google.generativeai as genai
 import pandas as pd
 
