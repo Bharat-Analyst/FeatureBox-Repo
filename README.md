@@ -39,7 +39,7 @@ import google.generativeai as genai
 import pandas as pd
 
 
-genai.configure(api_key="AIzaSyDkE1qb5anb68m3j4szVd0RLDxE1yhMHzM")
+genai.configure(api_key="GEMINI_API_KEY")
 
 def get_similar_products_from_gemini(input_data: dict, df: pd.DataFrame, top_k: int = 5) -> list:
     """
