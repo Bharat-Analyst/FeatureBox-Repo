@@ -125,8 +125,7 @@ for r in results:
 
     2025-06-08 06:33:42.984 200 POST /v1beta/models/gemini-2.0-flash:generateContent?%24alt=json%3Benum-encoding%3Dint (127.0.0.1) 3730.84ms
 
-
-    Error parsing Gemini response: invalid syntax (<string>, line 1)
+# JSON Output
     ```json
     [
       {
