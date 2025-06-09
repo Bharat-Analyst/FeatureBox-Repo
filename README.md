@@ -33,7 +33,7 @@ Show similarity scores and key matching attributes (category, brand, region).
 - This proof of concept uses the gemini-2.0-flash, but this can be updated to a more advanced gemini LLM model if needed
 
 
-
+## Gemini Wrapper
 ```python
 import pandas as pd
 
@@ -107,9 +107,8 @@ Only return the final answer as a JSON-formatted list.
         return []
 ```
 
-
+## Sample input product for testing
 ```python
-# Sample input product for testing
 input_product = {
     "UPC": "012345678901",
     "Brand": "Kind",
@@ -125,7 +124,7 @@ for r in results:
 
     2025-06-08 06:33:42.984 200 POST /v1beta/models/gemini-2.0-flash:generateContent?%24alt=json%3Benum-encoding%3Dint (127.0.0.1) 3730.84ms
 
-# JSON Output
+## JSON Output
     ```json
     [
       {
