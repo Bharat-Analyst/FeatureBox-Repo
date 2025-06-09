@@ -30,17 +30,10 @@ Show similarity scores and key matching attributes (category, brand, region).
       "Product Universe",
       "Product Level",
       "Attributes"
-- This proof of concept uses the gemini-2.0-flash, but this can be updated to a more advanced gemini LLM model if needed
+- This proof of concept uses the gemini-2.0-flash, but this can be updated to a more advanced Gemini LLM model if needed
 
 
 ## Gemini Wrapper
-```python
-import pandas as pd
-
-df = pd.read_csv("/content/mock_data.csv")
-```
-
-
 ```python
 df.head()
 ```
@@ -121,10 +114,8 @@ results = get_similar_products_from_gemini(input_product, df)
 for r in results:
     print(f"{r['Description']} — {r['Similarity Score']}% match — Factors: {', '.join(r['Matching Factors'])}")
 ```
-
-    2025-06-08 06:33:42.984 200 POST /v1beta/models/gemini-2.0-flash:generateContent?%24alt=json%3Benum-encoding%3Dint (127.0.0.1) 3730.84ms
-
 ## JSON Output
+    2025-06-08 06:33:42.984 200 POST /v1beta/models/gemini-2.0-flash:generateContent?%24alt=json%3Benum-encoding%3Dint (127.0.0.1) 3730.84ms
     ```json
     [
       {
